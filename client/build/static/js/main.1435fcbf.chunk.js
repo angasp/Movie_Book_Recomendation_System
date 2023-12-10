@@ -1429,18 +1429,16 @@
 							: "";
 					return Object(n.jsx)(Oe.a, {
 						initialValues: { username: p, password: "" },
-						validationSchema: ve
-							.a()
-							.shape({
-								username: ve
-									.c()
-									.min(2, t("login.usernameErr"))
-									.required(t("login.usernameErr2")),
-								password: ve
-									.c()
-									.min(4, t("login.passwordErr"))
-									.required(t("login.passwordErr2")),
-							}),
+						validationSchema: ve.a().shape({
+							username: ve
+								.c()
+								.min(2, t("login.usernameErr"))
+								.required(t("login.usernameErr2")),
+							password: ve
+								.c()
+								.min(4, t("login.passwordErr"))
+								.required(t("login.passwordErr2")),
+						}),
 						onSubmit: function (n, r) {
 							var i = r.setSubmitting;
 							setTimeout(function () {
@@ -2292,7 +2290,7 @@
 									? Object(n.jsx)("a", {
 											href: "/",
 											children: Object(n.jsx)("img", {
-												src: "https://res.cloudinary.com/dkyqbngya/image/upload/c_scale,w_200/v1584983552/logo_lqnlwk.png",
+												src: "./logo.png",
 												alt: "Logo",
 												style: { width: "100%", marginTop: "-5px" },
 											}),
@@ -2300,7 +2298,7 @@
 									: Object(n.jsx)("a", {
 											href: "/landing",
 											children: Object(n.jsx)("img", {
-												src: "https://res.cloudinary.com/dkyqbngya/image/upload/c_scale,w_200/v1584983552/logo_lqnlwk.png",
+												src: "./logo.png",
 												alt: "Logo",
 												style: { width: "100%", marginTop: "-5px" },
 											}),

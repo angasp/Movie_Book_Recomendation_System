@@ -246,9 +246,9 @@ router.post('/forgotPassword', async (req, res) => {
             });      
 
             let info = await transporter.sendMail({
-                from: 'Hypertube', // sender address
+                from: 'FilmFlock', // sender address
                 to: sanitize(user.email), // list of receivers
-                subject: "HYPERTUBE 🎬 | Registration confirmation", // Subject line
+                subject: "FilmFxlock 🎬 | Registration confirmation", // Subject line
                 text: `https://moviemain.herokuapp.com/confirmation/${user.tokenConf}`, // plain text body
                 html: `<html>
                 <body>
